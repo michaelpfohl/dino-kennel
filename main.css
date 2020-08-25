@@ -51,3 +51,26 @@ body {
 .modal--image {
     width: 50%;
 }
+
+.card-container--header {
+    padding-top: 20px;
+}
+
+.kennel--container {
+    text-align: center;
+    margin-top: 50px;
+    color:#282034;
+    background: #BBA0CA;
+}
+
+.hospital--container {
+    text-align: center;
+    color:#282034;
+    background: #F9DEC9;
+}
+
+.graveyard--container {
+    text-align: center;
+    color:#282034;
+    background: #E09F7D;
+}
