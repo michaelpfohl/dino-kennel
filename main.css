@@ -57,6 +57,7 @@ body {
 }
 
 .kennel--container {
+    padding: 81px;
     text-align: center;
     margin-top: 50px;
     color:#282034;
@@ -64,13 +65,20 @@ body {
 }
 
 .hospital--container {
+    padding: 81px;
     text-align: center;
     color:#282034;
     background: #F9DEC9;
 }
 
 .graveyard--container {
+    padding: 81px;
+    margin-bottom: 0px;
     text-align: center;
     color:#282034;
     background: #E09F7D;
+}
+
+.bg-warning {
+    background: yellow;
 }

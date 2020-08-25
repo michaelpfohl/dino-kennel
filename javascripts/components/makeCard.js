@@ -10,14 +10,14 @@ const makeCard = (item, index) => {
         </div>
         <div class="modal-body">
             <div class="d-flex">
-                <img class="modal--image"src="${item.image}" alt="${item.name}">
+                <img class="modal--image" src="${item.image}" alt="${item.name}">
                 <div>
                     <h1>${item.name}</h1>
                     <p>Owner: ${item.owner}</p>
                     <p>Type: ${item.type}</p>
                     <p>Age: ${item.age}</p>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%"></div>
+                        <div id="healthBar-${index}" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%">${item.health}%</div>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const makeCard = (item, index) => {
         <h5 class="card-title card--name mx-auto">${item.name}</h5>
       </div>
       <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%"></div>
+        <div id="healthBar-${index}" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%">${item.health}%</div>
       </div>
       <div class="d-flex justify-content-around mt-3 m-2">
         <button id="feed-${index}" type="button" class="btn btn-outline-success"><i class="fas fa-drumstick-bite mx-4"></i></button>

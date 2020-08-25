@@ -1,4 +1,5 @@
 import { printDinos } from './printDinos.js'
+import { healthColor } from './healthColor.js'
 
 const adventureDino = (index, item, array) => {
     $(`#adventure-${index}`).click(() => {
@@ -9,6 +10,7 @@ const adventureDino = (index, item, array) => {
         item.adventures.push(
             {date: Date(), adventure:randomAdventure(adventureList)}
             );
+        healthColor(item, index);
         printDinos(array);
     })
 }
