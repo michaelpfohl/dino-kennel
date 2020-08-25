@@ -13,19 +13,19 @@ const makeCard = (item, index) => {
         <div class="modal-body">
             <div class="d-flex">
                 <img class="modal--image" src="${item.image}" alt="${item.name}">
-                <div>
+                <div class="modal--content">
                     <h1>${item.name}</h1>
                     <p>Owner: ${item.owner}</p>
                     <p>Type: ${item.type}</p>
                     <p>Age: ${item.age}</p>
-                    <div class="progress">
-                        <div id="healthBar-${index}" class="progress-bar progress-bar-striped progress-bar-animated ${healthColor(item, index)}" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%">${item.health}%</div>
-                    </div>
                 </div>
+            </div>
+            <div class="progress mt-3">
+              <div id="healthBar-${index}" class="progress-bar progress-bar-striped progress-bar-animated ${healthColor(item, index)}" role="progressbar" aria-valuenow="${item.health}" aria-valuemin="0" aria-valuemax="100" style="width: ${item.health}%">${item.health}%</div>
             </div>
             <div class="mt-3">
                 <table class="table table-hover">
-                    <thead>
+                    <thead class="table--head">
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Date</th>
