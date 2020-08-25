@@ -1,4 +1,4 @@
-import { feedDino } from './feedAndPetDino.js'
+import { feedAndPetDino } from './feedAndPetDino.js'
 
 const printDinos = (array) => {
     $('#kennel').html('');
@@ -26,7 +26,7 @@ const printDinos = (array) => {
               </div>
             </div>
           </div>`)
-          feedDino(index, item, array);
+          feedAndPetDino(index, item, array);
     })
 }
 
