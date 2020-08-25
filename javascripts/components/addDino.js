@@ -56,7 +56,8 @@ const submitForm = () => {
                     age: $('#inputAge').val(),
                     type: $('#inputType').val(),
                     image: $('#inputImage').val(),
-                    health: 75
+                    health: 75,
+                    adventures: []
                 };
                 getDinos().push(newDino);
                 printDinos(getDinos());
