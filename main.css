@@ -78,15 +78,3 @@ body {
     color:#282034;
     background: #E09F7D;
 }
-
-.bg--success {
-    background: green;
-}
-
-.bg--warning {
-    background: yellow;
-}
-
-.bg--danger {
-    background: red;
-}

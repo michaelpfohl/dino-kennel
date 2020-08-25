@@ -1,14 +1,11 @@
-import { printDinos } from './printDinos.js'
-
-const healthColor = (item, index, array) => {
+const healthColor = (item, index) => {
     if (item.health >= 60){
-        $(`#healthBar-${index}`).removeClass('bg-warning bg-danger').addClass('bg-success');
+        return 'bg-success';
     } else if (item.health < 60 && item.health > 20){
-        $(`#healthBar-${index}`).removeClass('bg-success bg-danger').addClass('bg-warning');
+        return 'bg-warning';
     } else {
-        $(`#healthBar-${index}`).removeClass('bg-warning bg-success').addClass('bg-danger');
+        return 'bg-danger';
     }
-    printDinos(array);
 }
 
 export { healthColor }

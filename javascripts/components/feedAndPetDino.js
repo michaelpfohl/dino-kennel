@@ -1,4 +1,4 @@
-import { healthColor } from './healthColor.js'
+import { printDinos } from './printDinos.js'
 
 const feedAndPetDino = (index, item, array) => {
     $(`#feed-${index}`).click( () => {
@@ -6,14 +6,14 @@ const feedAndPetDino = (index, item, array) => {
         if (item.health > 100){
             item.health = 100;
         }
-        healthColor(item, index, array);
+        printDinos(array);
     });
     $(`#pet-${index}`).click( () => {
         item.health += 3;
         if (item.health > 100){
             item.health = 100;
         }
-        healthColor(item, index, array);
+        printDinos(array);
     });
 }
 
