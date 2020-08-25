@@ -1,4 +1,5 @@
 import { getDinos } from '../helpers / data/dinos.js'
+import { printDinos } from './printDinos.js'
 
 const createForm = () => {
     $('#addDinoButton').on('click', () => {
@@ -58,7 +59,7 @@ const submitForm = () => {
                     health: 75
                 };
                 getDinos().push(newDino);
-                console.log(getDinos());
+                printDinos(getDinos());
                 clearForm(); 
             } else {
                 $('#emptyFormError').html(`Please fill out all fields!`);

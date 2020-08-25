@@ -39,3 +39,11 @@ body {
 .btn-outline-info:hover {
     background: #18161B;
 }
+
+.dino--card {
+    background: #282034;
+}
+
+.card--name {
+    color: #5FAEA1;
+}
