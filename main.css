@@ -47,3 +47,7 @@ body {
 .card--name {
     color: #5FAEA1;
 }
+
+.modal--image {
+    width: 50%;
+}
