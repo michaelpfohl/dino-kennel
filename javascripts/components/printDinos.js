@@ -16,7 +16,7 @@ const printDinos = (array) => {
         feedAndPetDino(index, item, array);
         adventureDino(index, item, array);
         adventureInfo(item, index);
-        removeDino(index, array);
+        removeDino(index, array);     
     })
 }
 
@@ -24,7 +24,6 @@ const clearDOM = () => {
     $('#kennel').html('');
     $('#hospital').html('');
     $('#graveyard').html('');
-
 }
 
 export { printDinos }

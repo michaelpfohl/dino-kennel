@@ -5,14 +5,14 @@ const feedAndPetDino = (index, item, array) => {
         item.health += 10;
         if (item.health > 100){
             item.health = 100;
-        } 
+        }
         printDinos(array);
     });
     $(`#pet-${index}`).click( () => {
         item.health += 3;
         if (item.health > 100){
             item.health = 100;
-        } 
+        }
         printDinos(array);
     });
 }
