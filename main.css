@@ -1,3 +1,41 @@
 body {
-    background: cornflowerblue;
+    background: #18161B;
+    color: #282034;
+}
+
+.navbar--header {
+    color: #5FAEA1;
+    font-size: 1.5rem;
+}
+
+.navbar--background {
+    background: #282034;
+}
+
+.add--form {
+    background: #5FAEA1;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+.error {
+    color: #b8000a;
+}
+
+.btn-outline-primary {
+    color: #5FAEA1;
+    border-color: #5FAEA1;
+}
+
+.btn-outline-primary:hover {
+    background: #5FAEA1;
+}
+
+.btn-outline-info {
+    color: #18161B;
+    border-color: #18161B;
+}
+
+.btn-outline-info:hover {
+    background: #18161B;
 }
