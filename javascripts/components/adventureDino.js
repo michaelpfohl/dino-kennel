@@ -2,14 +2,16 @@ import { printDinos } from './printDinos.js'
 
 const adventureDino = (index, item, array) => {
     $(`#adventure-${index}`).click(() => {
-        item.health -= 20;
-        if (item.health < 0){
-            item.health = 0;
-        }
-        item.adventures.push(
-            {date: Date(), adventure:randomAdventure(adventureList)}
-            );
-        printDinos(array);
+        if (item.health > 0){
+            item.health -= 20;
+            if (item.health < 0){
+                item.health = 0;
+            }
+            item.adventures.push(
+                {date: Date(), adventure:randomAdventure(adventureList)}
+                );
+            printDinos(array);
+        }  
     })
 }
 
