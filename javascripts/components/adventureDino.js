@@ -1,4 +1,3 @@
-import { printDinos } from './printDinos.js'
 import { healthColor } from './healthColor.js'
 
 const adventureDino = (index, item, array) => {
@@ -10,8 +9,7 @@ const adventureDino = (index, item, array) => {
         item.adventures.push(
             {date: Date(), adventure:randomAdventure(adventureList)}
             );
-        healthColor(item, index);
-        printDinos(array);
+        healthColor(item, index, array);
     })
 }
 

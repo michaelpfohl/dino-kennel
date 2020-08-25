@@ -42,7 +42,7 @@ const makeCard = (item, index) => {
     </div>
 
     <div class="card dino--card m-2" style="width: 20rem;">
-    <img class="card-img-top p-3" src="${item.image}" alt="${item.name}">
+    <img class="card-img-top p-1" src="${item.image}" alt="${item.name}">
     <div class="card-body">
       <div class="d-flex justify-content-center">
         <h5 class="card-title card--name mx-auto">${item.name}</h5>

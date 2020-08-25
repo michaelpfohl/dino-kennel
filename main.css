@@ -79,6 +79,14 @@ body {
     background: #E09F7D;
 }
 
-.bg-warning {
+.bg--success {
+    background: green;
+}
+
+.bg--warning {
     background: yellow;
+}
+
+.bg--danger {
+    background: red;
 }
