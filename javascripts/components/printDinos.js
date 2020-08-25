@@ -1,4 +1,5 @@
 import { feedAndPetDino } from './feedAndPetDino.js'
+import { removeDino } from './removeDino.js'
 
 const printDinos = (array) => {
     $('#kennel').html('');
@@ -19,7 +20,7 @@ const printDinos = (array) => {
               </div>
               <div class="d-flex justify-content-around m-2">
                 <button id="adventure-${index}" type="button" class="btn btn-outline-warning"><i class="fas fa-hiking mx-4"></i></button>
-                <button id="delete-${index}" type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt mx-4"></i></button>
+                <button id="remove-${index}" type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt mx-4"></i></button>
               </div>
               <div class="d-flex justify-content-around mt-3 m-2">
                 <button id="view-${index}" type="button" class="btn btn-outline-light"><i class="fas fa-eye mx-5"></i></button>
@@ -27,6 +28,7 @@ const printDinos = (array) => {
             </div>
           </div>`)
           feedAndPetDino(index, item, array);
+          removeDino(index, array);
     })
 }
 
