@@ -29,7 +29,8 @@ body {
 
 .btn-outline-primary:hover {
     background: #E09F7D;
-    border-color: #fff;
+    color: #282034;
+    border-color: #282034;
 }
 
 .btn-outline-info {
@@ -129,4 +130,15 @@ body {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #282034;
+}
+
+.help--body {
+    background: #282034;
+    color: #E09F7D;
+    text-align: center;
+}
+
+.help--header {
+    font-size: 1rem;
+    margin-top: 5px;
 }

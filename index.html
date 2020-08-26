@@ -11,6 +11,53 @@
 <body>
     <nav class="navbar navbar--background">
         <a class="navbar--header ml-1">DinoKennel</a>
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#helpModal">
+            Need Help?
+        </button>
+        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="helpModalLabel">Dino Guide</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body d-flex justify-content-around help--body">
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success"><i class="fas fa-drumstick-bite mx-4"></i></button>
+                            <h3 class="help--header">Feed</h3>
+                            <p>Feed your Dino for +10 health! (I hear they really like tourist legs, but maybe you can teach them to give up meat, for the environment!)</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success"><i class="fas fa-hand-sparkles mx-4"></i></button>
+                            <h3 class="help--header">Pet</h3>
+                            <p>Pet your Dino for +3 health! (Just watch your hands though, those teeth are real sharp and if you haven't fed them in a while things could get dicey!)</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-warning"><i class="fas fa-hiking mx-4"></i></button>
+                            <h3 class="help--header">Adventure</h3>
+                            <p>Send your Dino on an adventure! Costs 20 health but experiences are priceless! Just be careful not to let your Dino get to low on health!</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt mx-4"></i></button>
+                            <h3 class="help--header">Remove</h3>
+                            <p>Remove your dino from the page! (I know it can be hard to say goodbye but they are giant reptiles so maybe letting them go is for the best.)</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-light"><i class="fas fa-eye mx-4"></i></button>
+                            <h3 class="help--header">View</h3>
+                            <p>Learn even more about your Dino! See what adventures they have been on and when and get a closer look at what kind of Dino they are!</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </nav>
     <div class="container d-flex justify-content-center" id="addButtonContainer">
         <button id="addDinoButton" type="button" class="btn btn-outline-primary btn-lg mt-5">+ Add Dino</button>
