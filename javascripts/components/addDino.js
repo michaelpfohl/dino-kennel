@@ -1,4 +1,4 @@
-import { getDinos, sendToLocal, getFromLocal } from '../helpers / data/dinos.js'
+import { sendToLocal, getFromLocal } from '../helpers / data/dinos.js'
 import { printDinos } from './printDinos.js'
 
 const createForm = () => {

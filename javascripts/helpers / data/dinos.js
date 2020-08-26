@@ -1,8 +1,8 @@
 const dinos = [];
 
-const getDinos = () => {
-    return dinos;
-}
+// const getDinos = () => {
+//     return dinos;
+// }
 
 const sendToLocal = (key, value) => {
     let passedValue = JSON.stringify(value);
@@ -14,4 +14,4 @@ const getFromLocal = (key) => {
     return JSON.parse(retrievedValue);
   }
 
-export { getDinos, sendToLocal, getFromLocal }
+export { sendToLocal, getFromLocal }
