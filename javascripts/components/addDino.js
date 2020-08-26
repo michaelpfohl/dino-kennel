@@ -1,4 +1,4 @@
-import { getDinos } from '../helpers / data/dinos.js'
+import { getDinos, sendToLocal, getFromLocal } from '../helpers / data/dinos.js'
 import { printDinos } from './printDinos.js'
 
 const createForm = () => {
@@ -51,16 +51,17 @@ const submitForm = () => {
             $('#inputType').val() !== '' &&
             $('#inputImage').val() !== ''){
                 let newDino = {
-                    name: $('#inputName').val(),
-                    owner: $('#inputOwner').val(),
-                    age: $('#inputAge').val(),
-                    type: $('#inputType').val(),
-                    image: $('#inputImage').val(),
-                    health: 75,
-                    adventures: []
+                    "name": $('#inputName').val(),
+                    "owner": $('#inputOwner').val(),
+                    "age": $('#inputAge').val(),
+                    "type": $('#inputType').val(),
+                    "image": $('#inputImage').val(),
+                    "health": 75,
+                    "adventures": []
                 };
-                getDinos().push(newDino);
-                printDinos(getDinos());
+                sendToLocal("dinos", newDino);
+                console.log(getFromLocal("dinos"));
+                printDinos(getFromLocal("dinos"));
                 clearForm(); 
             } else {
                 $('#emptyFormError').html(`Please fill out all fields!`);

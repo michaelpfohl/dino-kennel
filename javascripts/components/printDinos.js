@@ -5,7 +5,7 @@ import { adventureDino, adventureInfo } from './adventureDino.js'
 
 const printDinos = (array) => {
     clearDOM();
-    array.forEach((item, index) => {
+    array.forEach((array, item, index) => {
         if (item.health >= 50){
             $('#kennel').append(makeCard(item, index))
         } else if (item.health < 50 && item.health > 0){
