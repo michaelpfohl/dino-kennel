@@ -1,5 +1,5 @@
 # Dino-Kennel
-![Home Page](/images/dinoKennelMain.png)
+![Home Page](/images/dino-kennel.gif)
 
 ## Features:
 - Upon clicking the Add Dino button a form populates where the user can input information for a Dino. 
